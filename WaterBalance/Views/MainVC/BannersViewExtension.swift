@@ -37,10 +37,10 @@ extension BannersView {
             self.backgroundColor = .systemBlue
             
             self.titleLabel.text = "Добавить"
-            self.titleLabel.tintColor = .white
+            self.titleLabel.textColor = .white
             
             self.subtitleLabel.text = "Воду"
-            self.subtitleLabel.tintColor = .white
+            self.subtitleLabel.textColor = .white
             
             self.imageView.image = UIImage(named: "water-drop")
             
@@ -55,8 +55,8 @@ extension BannersView {
         override func layoutSubviews() {
             super.layoutSubviews()
             
-            self.addConstraintWithFormat("H:|-20-[v0(180)]-70-[v1(50)]", views: titleLabel, imageView)
-            self.addConstraintWithFormat("H:|-20-[v0(180)]", views: subtitleLabel)
+            self.addConstraintWithFormat("H:|-30-[v0(180)]-70-[v1(50)]", views: titleLabel, imageView)
+            self.addConstraintWithFormat("H:|-30-[v0(180)]", views: subtitleLabel)
             self.addConstraintWithFormat("V:|-20-[v0]-10-[v1]-20-|", views: titleLabel, subtitleLabel)
             self.addConstraintWithFormat("V:|-10-[v0]-10-|", views: imageView)
         }

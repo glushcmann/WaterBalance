@@ -26,6 +26,7 @@ extension BannersView: UIScrollViewDelegate {
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
         guard
                 self.leftItemView.frame.width > 0,
                 self.centerItemView.frame.width > 0,
