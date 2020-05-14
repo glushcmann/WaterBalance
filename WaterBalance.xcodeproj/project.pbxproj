@@ -10,6 +10,7 @@
 		110B53272464861B002B33BF /* DayInfoContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110B53262464861B002B33BF /* DayInfoContainerView.swift */; };
 		110B532924649627002B33BF /* DayProgressContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110B532824649627002B33BF /* DayProgressContainerView.swift */; };
 		110B532B24649682002B33BF /* BannersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110B532A24649682002B33BF /* BannersView.swift */; };
+		118E73962469F46000DEFC43 /* SettingsCollecionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118E73952469F46000DEFC43 /* SettingsCollecionCell.swift */; };
 		1197ACA424658B50004BA7D4 /* BannersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1197ACA324658B50004BA7D4 /* BannersViewModel.swift */; };
 		1197ACA62465CE90004BA7D4 /* BannersViewScrollDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1197ACA52465CE90004BA7D4 /* BannersViewScrollDelegate.swift */; };
 		1197ACA82465CEC4004BA7D4 /* BannersViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1197ACA72465CEC4004BA7D4 /* BannersViewExtension.swift */; };
@@ -19,18 +20,26 @@
 		11DE3A8D2466D3AB00B6DDAF /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DE3A8C2466D3AB00B6DDAF /* BaseCell.swift */; };
 		11DE3A902466D47B00B6DDAF /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DE3A8F2466D47B00B6DDAF /* SettingsCell.swift */; };
 		11EB83E12464652600204DCC /* ConstraintsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EB83E02464652600204DCC /* ConstraintsExtension.swift */; };
+		11EE9691246D84660090F8DB /* SettingsCellSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EE9690246D84660090F8DB /* SettingsCellSwitch.swift */; };
+		11EE9693246D89110090F8DB /* SaveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EE9692246D89110090F8DB /* SaveCell.swift */; };
+		11EE9695246D90040090F8DB /* DayTimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EE9694246D90040090F8DB /* DayTimeVC.swift */; };
+		11EE9698246D96250090F8DB /* SleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EE9697246D96250090F8DB /* SleepView.swift */; };
+		11EE969A246D97540090F8DB /* TitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EE9699246D97540090F8DB /* TitleCell.swift */; };
+		11EE969C246D985E0090F8DB /* BaseCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EE969B246D985E0090F8DB /* BaseCollectionCell.swift */; };
+		11EE969E246DA3DB0090F8DB /* FoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EE969D246DA3DB0090F8DB /* FoodView.swift */; };
+		11EE96A2246DA6C90090F8DB /* Train.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EE96A1246DA6C90090F8DB /* Train.swift */; };
 		11F567A824630B8E00E606EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F567A724630B8E00E606EA /* AppDelegate.swift */; };
 		11F567AC24630B8E00E606EA /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F567AB24630B8E00E606EA /* MainVC.swift */; };
 		11F567B124630B9200E606EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11F567B024630B9200E606EA /* Assets.xcassets */; };
 		11F567B424630B9200E606EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11F567B224630B9200E606EA /* LaunchScreen.storyboard */; };
 		11F567BC24630E9300E606EA /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F567BB24630E9300E606EA /* SettingsVC.swift */; };
-		11F567BE2463353500E606EA /* CustomSettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F567BD2463353500E606EA /* CustomSettingsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		110B53262464861B002B33BF /* DayInfoContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayInfoContainerView.swift; sourceTree = "<group>"; };
 		110B532824649627002B33BF /* DayProgressContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayProgressContainerView.swift; sourceTree = "<group>"; };
 		110B532A24649682002B33BF /* BannersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannersView.swift; sourceTree = "<group>"; };
+		118E73952469F46000DEFC43 /* SettingsCollecionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCollecionCell.swift; sourceTree = "<group>"; };
 		1197ACA324658B50004BA7D4 /* BannersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannersViewModel.swift; sourceTree = "<group>"; };
 		1197ACA52465CE90004BA7D4 /* BannersViewScrollDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannersViewScrollDelegate.swift; sourceTree = "<group>"; };
 		1197ACA72465CEC4004BA7D4 /* BannersViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannersViewExtension.swift; sourceTree = "<group>"; };
@@ -40,6 +49,14 @@
 		11DE3A8C2466D3AB00B6DDAF /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
 		11DE3A8F2466D47B00B6DDAF /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		11EB83E02464652600204DCC /* ConstraintsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintsExtension.swift; sourceTree = "<group>"; };
+		11EE9690246D84660090F8DB /* SettingsCellSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCellSwitch.swift; sourceTree = "<group>"; };
+		11EE9692246D89110090F8DB /* SaveCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveCell.swift; sourceTree = "<group>"; };
+		11EE9694246D90040090F8DB /* DayTimeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTimeVC.swift; sourceTree = "<group>"; };
+		11EE9697246D96250090F8DB /* SleepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepView.swift; sourceTree = "<group>"; };
+		11EE9699246D97540090F8DB /* TitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCell.swift; sourceTree = "<group>"; };
+		11EE969B246D985E0090F8DB /* BaseCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionCell.swift; sourceTree = "<group>"; };
+		11EE969D246DA3DB0090F8DB /* FoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodView.swift; sourceTree = "<group>"; };
+		11EE96A1246DA6C90090F8DB /* Train.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Train.swift; sourceTree = "<group>"; };
 		11F567A424630B8E00E606EA /* WaterBalance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterBalance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11F567A724630B8E00E606EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11F567AB24630B8E00E606EA /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -47,7 +64,6 @@
 		11F567B324630B9200E606EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11F567B524630B9200E606EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11F567BB24630E9300E606EA /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
-		11F567BD2463353500E606EA /* CustomSettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSettingsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +80,7 @@
 		117ED4C924657939001576EA /* MainVC */ = {
 			isa = PBXGroup;
 			children = (
+				11F567AB24630B8E00E606EA /* MainVC.swift */,
 				110B53262464861B002B33BF /* DayInfoContainerView.swift */,
 				110B532824649627002B33BF /* DayProgressContainerView.swift */,
 				110B532A24649682002B33BF /* BannersView.swift */,
@@ -78,6 +95,7 @@
 			children = (
 				11F567BB24630E9300E606EA /* SettingsVC.swift */,
 				11DE3A8A2466D31F00B6DDAF /* PersonalInformationVC.swift */,
+				11EE9694246D90040090F8DB /* DayTimeVC.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -104,7 +122,6 @@
 			children = (
 				11DE3A8E2466D44700B6DDAF /* Cell */,
 				11DE3A892466D2F400B6DDAF /* SettingsVC */,
-				117ED4C924657939001576EA /* MainVC */,
 				11EB83E02464652600204DCC /* ConstraintsExtension.swift */,
 			);
 			path = Views;
@@ -113,6 +130,7 @@
 		11DE3A892466D2F400B6DDAF /* SettingsVC */ = {
 			isa = PBXGroup;
 			children = (
+				11EE9696246D96080090F8DB /* DayTime */,
 			);
 			path = SettingsVC;
 			sourceTree = "<group>";
@@ -121,9 +139,32 @@
 			isa = PBXGroup;
 			children = (
 				11DE3A8C2466D3AB00B6DDAF /* BaseCell.swift */,
+				11EE969B246D985E0090F8DB /* BaseCollectionCell.swift */,
 				11DE3A8F2466D47B00B6DDAF /* SettingsCell.swift */,
+				118E73952469F46000DEFC43 /* SettingsCollecionCell.swift */,
+				11EE9690246D84660090F8DB /* SettingsCellSwitch.swift */,
+				11EE9692246D89110090F8DB /* SaveCell.swift */,
+				11EE9699246D97540090F8DB /* TitleCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		11EE968F246D82DD0090F8DB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				11CA63262463663500A16B02 /* ProfileVC.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		11EE9696246D96080090F8DB /* DayTime */ = {
+			isa = PBXGroup;
+			children = (
+				11EE9697246D96250090F8DB /* SleepView.swift */,
+				11EE969D246DA3DB0090F8DB /* FoodView.swift */,
+				11EE96A1246DA6C90090F8DB /* Train.swift */,
+			);
+			path = DayTime;
 			sourceTree = "<group>";
 		};
 		11F5679B24630B8E00E606EA = {
@@ -146,14 +187,13 @@
 		11F567A624630B8E00E606EA /* WaterBalance */ = {
 			isa = PBXGroup;
 			children = (
-				11973C092468465700080A4A /* Settings */,
 				11F567A724630B8E00E606EA /* AppDelegate.swift */,
-				11F567AB24630B8E00E606EA /* MainVC.swift */,
-				11CA63262463663500A16B02 /* ProfileVC.swift */,
+				117ED4C924657939001576EA /* MainVC */,
+				11EE968F246D82DD0090F8DB /* Profile */,
+				11973C092468465700080A4A /* Settings */,
 				11CA632B24636CFF00A16B02 /* Views */,
 				1197ACA224658B3B004BA7D4 /* Model */,
 				11CA63282463664400A16B02 /* Support Files */,
-				11F567BD2463353500E606EA /* CustomSettingsCell.swift */,
 				11F567B524630B9200E606EA /* Info.plist */,
 			);
 			path = WaterBalance;
@@ -240,11 +280,19 @@
 				11F567AC24630B8E00E606EA /* MainVC.swift in Sources */,
 				11F567A824630B8E00E606EA /* AppDelegate.swift in Sources */,
 				11DE3A8D2466D3AB00B6DDAF /* BaseCell.swift in Sources */,
+				11EE9693246D89110090F8DB /* SaveCell.swift in Sources */,
+				11EE9698246D96250090F8DB /* SleepView.swift in Sources */,
+				11EE969A246D97540090F8DB /* TitleCell.swift in Sources */,
+				11EE969C246D985E0090F8DB /* BaseCollectionCell.swift in Sources */,
+				11EE969E246DA3DB0090F8DB /* FoodView.swift in Sources */,
+				11EE9695246D90040090F8DB /* DayTimeVC.swift in Sources */,
 				1197ACA424658B50004BA7D4 /* BannersViewModel.swift in Sources */,
 				11F567BC24630E9300E606EA /* SettingsVC.swift in Sources */,
-				11F567BE2463353500E606EA /* CustomSettingsCell.swift in Sources */,
+				11EE9691246D84660090F8DB /* SettingsCellSwitch.swift in Sources */,
 				110B53272464861B002B33BF /* DayInfoContainerView.swift in Sources */,
 				11DE3A902466D47B00B6DDAF /* SettingsCell.swift in Sources */,
+				118E73962469F46000DEFC43 /* SettingsCollecionCell.swift in Sources */,
+				11EE96A2246DA6C90090F8DB /* Train.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

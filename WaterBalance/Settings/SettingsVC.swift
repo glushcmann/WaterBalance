@@ -18,7 +18,7 @@ class SettingsVC: UITableViewController {
                 ["Написать разработчикам", "О приложении"]]
     
     override init(style: UITableView.Style) {
-        super.init(style: .grouped)
+        super.init(style: style)
     }
     
     required init?(coder: NSCoder) {
@@ -31,6 +31,8 @@ class SettingsVC: UITableViewController {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "TableViewCell")
         
         self.navigationItem.title = "Настройки"
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        
     }
 
 }
@@ -113,19 +115,26 @@ extension SettingsVC {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if indexPath.section.row. == 1 {
-//            self.navigationController?.present(PersonalInformationVC(style: .plain), animated: true, completion: nil)
-//        }
-        switch indexPath.section {
-               case 0:
-                   switch indexPath.row {
-                    case 0:
-                        self.navigationController?.present(PersonalInformationVC(style: .plain), animated: true, completion: nil)
-                   default:
-                    break
-            }
+        switch indexPath.section  {
+            case 0:
+            switch indexPath.row {
+                case 0:
+                    let layout = UICollectionViewFlowLayout()
+                    layout.scrollDirection = .vertical
+                    navigationController?.pushViewController(PersonalInformationVC(collectionViewLayout: layout), animated: true)
+                case 1:
+                    let layout = UICollectionViewFlowLayout()
+                    layout.scrollDirection = .vertical
+                    navigationController?.present(PersonalInformationVC(collectionViewLayout: layout), animated: true, completion: nil)
+                case 2:
+                    let layout = UICollectionViewFlowLayout()
+                    layout.scrollDirection = .vertical
+                    navigationController?.present(PersonalInformationVC(collectionViewLayout: layout), animated: true, completion: nil)
                 default:
-            break
+                    break
+                }
+            default:
+                break
         }
     }
     

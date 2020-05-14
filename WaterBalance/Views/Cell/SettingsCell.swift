@@ -12,7 +12,6 @@ class SettingsCell: BaseCell {
     
     let leftCountryLabel: UILabel = {
         let label = UILabel()
-        label.textColor = .black
         return label
     }()
     
