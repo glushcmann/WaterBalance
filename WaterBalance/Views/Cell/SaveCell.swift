@@ -14,6 +14,7 @@ class SaveCell: BaseCollectionCell {
         let view = UILabel()
         view.text = "Сохранить"
         view.textColor = .white
+        view.textAlignment = .center
         view.font = view.font.withSize(18)
         return view
     }()
@@ -23,7 +24,7 @@ class SaveCell: BaseCollectionCell {
         self.backgroundColor = .systemBlue
         addSubview(label)
         
-        addConstraintWithFormat("H:|-160-[v0]-160-|", views: label)
+        addConstraintWithFormat("H:|[v0]|", views: label)
         addConstraintWithFormat("V:|-10-[v0]-10-|", views: label)
         
     }

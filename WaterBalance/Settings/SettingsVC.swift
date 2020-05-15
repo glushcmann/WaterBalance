@@ -27,11 +27,13 @@ class SettingsVC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(SettingsCell.self, forCellReuseIdentifier: cellID)
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "TableViewCell")
         
         self.navigationItem.title = "Настройки"
         self.navigationController?.navigationBar.prefersLargeTitles = true
+        
+        tableView.register(SettingsCell.self, forCellReuseIdentifier: cellID)
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "TableViewCell")
+        
         
     }
 
@@ -123,16 +125,21 @@ extension SettingsVC {
                     layout.scrollDirection = .vertical
                     navigationController?.pushViewController(PersonalInformationVC(collectionViewLayout: layout), animated: true)
                 case 1:
-                    let layout = UICollectionViewFlowLayout()
-                    layout.scrollDirection = .vertical
-                    navigationController?.present(PersonalInformationVC(collectionViewLayout: layout), animated: true, completion: nil)
+                    navigationController?.pushViewController(DayTimeVC(), animated: true)
                 case 2:
-                    let layout = UICollectionViewFlowLayout()
-                    layout.scrollDirection = .vertical
-                    navigationController?.present(PersonalInformationVC(collectionViewLayout: layout), animated: true, completion: nil)
+                    navigationController?.pushViewController(NotificationsVC(), animated: true)
                 default:
                     break
-                }
+            }
+            case 1:
+            switch indexPath.row {
+                case 0:
+                    navigationController?.present(CoutriesVC(), animated: true)
+                case 1:
+                navigationController?.present(LanguageVC(), animated: true)
+                default:
+                    break
+            }
             default:
                 break
         }

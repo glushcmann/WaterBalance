@@ -68,12 +68,12 @@ extension PersonalInformationVC {
                 cell.rightLabel.placeholder = "Россия"
             case 5:
                 cellSwitch.leftLabel.text = "Уточнять активность при добавлении напистка"
-                cellSwitch.leftLabel.textColor = .gray
+                cellSwitch.leftLabel.textColor = .systemGray
                 cellSwitch.leftLabel.font = cellSwitch.leftLabel.font.withSize(14)
                 return cellSwitch
             case 6:
                 cellSwitch.leftLabel.text = "Учитывать влияние погоды на водный баланс"
-                cellSwitch.leftLabel.textColor = .gray
+                cellSwitch.leftLabel.textColor = .systemGray
                 cellSwitch.leftLabel.font = cellSwitch.leftLabel.font.withSize(14)
                 return cellSwitch
             case 7:

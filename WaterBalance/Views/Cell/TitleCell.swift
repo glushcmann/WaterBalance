@@ -10,21 +10,29 @@ import UIKit
 
 class TitleCell: BaseCollectionCell {
     
-    let label: UILabel = {
+    let labelUpper: UILabel = {
         let view = UILabel()
-        view.text = "Сохранить"
+        view.text = "Сон"
         view.textColor = .white
         view.font = view.font.withSize(18)
         return view
     }()
     
+    let labelBottom: UILabel = {
+        let label = UILabel()
+        label.textColor = .systemGray
+        return label
+    }()
+    
     override func setupViews() {
         
-        self.backgroundColor = .systemBlue
-        addSubview(label)
+        self.backgroundColor = .systemBackground
+        addSubview(labelUpper)
+        addSubview(labelBottom)
         
-        addConstraintWithFormat("H:|-160-[v0]-160-|", views: label)
-        addConstraintWithFormat("V:|-10-[v0]-10-|", views: label)
+        addConstraintWithFormat("H:|-15-[v0]-15-|", views: labelUpper)
+        addConstraintWithFormat("H:|-15-[v0]-15-|", views: labelBottom)
+        addConstraintWithFormat("V:|[v0][v1]|", views: labelUpper, labelBottom)
         
     }
 }

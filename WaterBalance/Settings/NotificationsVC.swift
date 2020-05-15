@@ -1,28 +1,26 @@
 //
-//  DayTime.swift
+//  NotificationsVC.swift
 //  WaterBalance
 //
-//  Created by Никита on 14.05.2020.
+//  Created by Никита on 15.05.2020.
 //  Copyright © 2020 Nikita Glushchenko. All rights reserved.
 //
 
 import UIKit
 
-class DayTimeVC: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class NotificationsVC: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    let cellID = "cell"
     let cellIDTitle = "title"
     let cellIDSwitch = "switch"
-    let cellIDAdd = "add"
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch section {
         case 0:
-            return 4
+            return 1
         case 1:
-            return 5
+            return 4
         case 2:
-            return 8
+            return 1
         default:
             return 1
         }
@@ -35,33 +33,13 @@ class DayTimeVC: UIViewController, UICollectionViewDataSource, UICollectionViewD
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cellTitle = self.collectionView.dequeueReusableCell(withReuseIdentifier: cellIDTitle, for: indexPath) as! TitleCell
-        let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as! SettingsCollectionCell
         let cellSwitch = self.collectionView.dequeueReusableCell(withReuseIdentifier: cellIDSwitch, for: indexPath) as! SettingsCellSwitch
-        let cellAdd = self.collectionView.dequeueReusableCell(withReuseIdentifier: cellIDAdd, for: indexPath) as! SaveCell
         
         switch indexPath.section {
         case 0:
             switch indexPath.row {
             case 0:
-                cellTitle.labelUpper.text = "Сон"
-                cellTitle.labelUpper.textColor = .black
-                cellTitle.labelUpper.font = UIFont.boldSystemFont(ofSize: 24)
-                cellTitle.labelBottom.text = "Напоминание о необходимости выпить воды после пробуждения"
-                cellTitle.labelBottom.font = UIFont.systemFont(ofSize: 12)
-                cellTitle.backgroundColor = .systemBackground
-                return cellTitle
-            case 1:
-                cell.leftLabel.text = "Просыпаюсь"
-                cell.rightLabel.text = "Добавить"
-                return cell
-            case 2:
-                cell.leftLabel.text = "Ложусь Спать"
-                cell.rightLabel.text = "Добавить"
-                return cell
-            case 3:
-                cellSwitch.leftLabel.text = "Не присылать утреннее уведомление по выходным"
-                cellSwitch.leftLabel.font = cellSwitch.leftLabel.font.withSize(12)
-                cellSwitch.leftLabel.textColor = .darkGray
+                cellSwitch.leftLabel.text = "Уведомления"
                 return cellSwitch
             default:
                 break
@@ -69,72 +47,31 @@ class DayTimeVC: UIViewController, UICollectionViewDataSource, UICollectionViewD
         case 1:
             switch indexPath.row {
             case 0:
-                cellTitle.labelUpper.text = "Прием пищи"
-                cellTitle.labelUpper.textColor = .black
-                cellTitle.labelUpper.font = UIFont.boldSystemFont(ofSize: 24)
-                cellTitle.labelBottom.text = "Напоминание о необходимости выпить воды за 30 минут до еды"
-                cellTitle.labelBottom.font = UIFont.systemFont(ofSize: 12)
-                cellTitle.backgroundColor = .systemBackground
-                return cellTitle
+                cellSwitch.leftLabel.text = "Уведомления каждые 2 часа"
+                return cellSwitch
             case 1:
-                cell.leftLabel.text = "Завтрак"
-                cell.rightLabel.text = "Добавить"
-                return cell
+                cellSwitch.leftLabel.text = "Уведомления перед едой"
+                return cellSwitch
             case 2:
-                cell.leftLabel.text = "Обед"
-                cell.rightLabel.text = "Добавить"
-                return cell
+                cellSwitch.leftLabel.text = "Уведомления перед тренировкой"
+                return cellSwitch
             case 3:
-                cell.leftLabel.text = "Ужин"
-                cell.rightLabel.text = "Добавить"
-                return cell
-            case 4:
-                cellAdd.label.text = "Добавить еще один прием пищи"
-                return cellAdd
+                cellSwitch.leftLabel.text = "Уведомления о высокой температуре воздуха"
+                return cellSwitch
             default:
                 break
             }
         case 2:
             switch indexPath.row {
             case 0:
-                cellTitle.labelUpper.text = "Тренировки"
-                cellTitle.labelUpper.textColor = .black
-                cellTitle.labelUpper.font = UIFont.boldSystemFont(ofSize: 24)
-                cellTitle.labelBottom.text = "Напоминание о необходимости пополнить водный баланс перед тренировкой"
+                cellTitle.labelUpper.text = ""
+                cellTitle.labelBottom.text = "Для некоторых уведомлений необходимо настроить распорядок дня"
                 cellTitle.labelBottom.font = UIFont.systemFont(ofSize: 12)
                 cellTitle.labelBottom.preferredMaxLayoutWidth = 650
                 cellTitle.labelBottom.lineBreakMode = .byWordWrapping
                 cellTitle.labelBottom.numberOfLines = 0
                 cellTitle.backgroundColor = .systemBackground
                 return cellTitle
-            case 1:
-                cell.leftLabel.text = "Понедельник"
-                cell.rightLabel.text = "Добавить"
-                return cell
-            case 2:
-                cell.leftLabel.text = "Вторник"
-                cell.rightLabel.text = "Добавить"
-                return cell
-            case 3:
-                cell.leftLabel.text = "Среда"
-                cell.rightLabel.text = "Добавить"
-                return cell
-            case 4:
-                cell.leftLabel.text = "Четверг"
-                cell.rightLabel.text = "Добавить"
-                return cell
-            case 5:
-                cell.leftLabel.text = "Пятница"
-                cell.rightLabel.text = "Добавить"
-                return cell
-            case 6:
-                cell.leftLabel.text = "Суббота"
-                cell.rightLabel.text = "Добавить"
-                return cell
-            case 7:
-                cell.leftLabel.text = "Воскресенье"
-                cell.rightLabel.text = "Добавить"
-                return cell
             default:
                 break
             }
@@ -142,8 +79,7 @@ class DayTimeVC: UIViewController, UICollectionViewDataSource, UICollectionViewD
             break
         }
         
-        
-        return cell
+        return cellTitle
     }
     
     
@@ -164,9 +100,7 @@ class DayTimeVC: UIViewController, UICollectionViewDataSource, UICollectionViewD
         collectionView.showsVerticalScrollIndicator = false
         
         collectionView?.register(TitleCell.self, forCellWithReuseIdentifier: cellIDTitle)
-        collectionView?.register(SettingsCollectionCell.self, forCellWithReuseIdentifier: cellID)
         collectionView?.register(SettingsCellSwitch.self, forCellWithReuseIdentifier: cellIDSwitch)
-        collectionView?.register(SaveCell.self, forCellWithReuseIdentifier: cellIDAdd)
         
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -174,7 +108,7 @@ class DayTimeVC: UIViewController, UICollectionViewDataSource, UICollectionViewD
         view.addSubview(collectionView)
     }
 }
-extension DayTimeVC {
+extension NotificationsVC {
     
     private func createLayout() -> UICollectionViewLayout {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),

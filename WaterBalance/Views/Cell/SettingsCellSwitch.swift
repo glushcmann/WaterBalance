@@ -32,9 +32,9 @@ class SettingsCellSwitch: BaseCollectionCell {
         addSubview(rightLabel)
         addSubview(dividerLine)
         
-        addConstraintWithFormat("H:|-15-[v0][v1]-15-|", views: leftLabel, rightLabel)
+        addConstraintWithFormat("H:|-15-[v0(330)][v1]-15-|", views: leftLabel, rightLabel)
         addConstraintWithFormat("V:|-10-[v0]-10-|", views: leftLabel)
-        addConstraintWithFormat("V:|-10-[v0]-10-|", views: rightLabel)
+        addConstraintWithFormat("V:[v0]-13-|", views: rightLabel)
         
         addConstraintWithFormat("H:|[v0]|", views: dividerLine)
         addConstraintWithFormat("V:[v0(0.4)]|", views: dividerLine)

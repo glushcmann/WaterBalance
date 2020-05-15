@@ -50,8 +50,7 @@ extension MainVC  {
     }
     
     @objc func settingsTapped() {
-//        self.navigationController?.present(SettingsVC(style: .grouped), animated: true, completion: nil)
-        self.navigationController?.pushViewController(SettingsVC(style: .insetGrouped), animated: true)
+        self.navigationController?.pushViewController(SettingsVC(style: .grouped), animated: true)
     }
     
     func setupDayInfo() {
