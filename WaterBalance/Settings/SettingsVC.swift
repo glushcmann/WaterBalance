@@ -123,11 +123,14 @@ extension SettingsVC {
                 case 0:
                     let layout = UICollectionViewFlowLayout()
                     layout.scrollDirection = .vertical
-                    navigationController?.pushViewController(PersonalInformationVC(collectionViewLayout: layout), animated: true)
+//                    navigationController?.pushViewController(PersonalInformationVC(collectionViewLayout: layout), animated: true)
+                    navigationController?.pushViewController(PersonalInformationViewController(), animated: true)
                 case 1:
-                    navigationController?.pushViewController(DayTimeVC(), animated: true)
+//                    navigationController?.pushViewController(DayTimeVC(), animated: true)
+                    navigationController?.pushViewController(DayTimeViewController(), animated: true)
                 case 2:
-                    navigationController?.pushViewController(NotificationsVC(), animated: true)
+//                    navigationController?.pushViewController(NotificationsVC(), animated: true)
+                    navigationController?.pushViewController(NotificationsViewController(), animated: true)
                 default:
                     break
             }
@@ -137,6 +140,15 @@ extension SettingsVC {
                     navigationController?.present(CoutriesVC(), animated: true)
                 case 1:
                 navigationController?.present(LanguageVC(), animated: true)
+                default:
+                    break
+            }
+            case 2:
+            switch indexPath.row {
+                case 0:
+                    navigationController?.pushViewController(CalcFriendViewController(), animated: true)
+                case 1:
+                    navigationController?.pushViewController(CalcFamilyViewController(), animated: true)
                 default:
                     break
             }
